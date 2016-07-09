@@ -41,8 +41,9 @@ class Quaternion < Numeric
 
   # imaginary constants
 
-  I = self.new 0, 1, 0, 0
-  J = self.new 0, 0, 1, 0
+  R = self.new 1
+  I = self.new 0, 1
+  J = self.new 0, 0, 1
   K = self.new 0, 0, 0, 1
 
   # override methods from Numeric
