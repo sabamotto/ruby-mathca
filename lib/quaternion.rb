@@ -39,6 +39,12 @@ class Quaternion < Numeric
     @t3 = t3
   end
 
+  # imaginary constants
+
+  I = self.new 0, 1, 0, 0
+  J = self.new 0, 0, 1, 0
+  K = self.new 0, 0, 0, 1
+
   # override methods from Numeric
 
   def % other
